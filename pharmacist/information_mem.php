@@ -136,11 +136,11 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="control-label">ชื่อสมาชิก</label>
-                        <input type="text" class="form-control" placeholder="ชื่อสมาชิก" name="name_mem">
+                        <input type="text" class="form-control" placeholder="ชื่อสมาชิก" name="name_mem" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">เลือกยาที่เเพ้</label>
-                        <select class="form-control" name="drug_se" multiple="multiple">
+                        <select class="form-control" name="drug_se" multiple="multiple" required>
 
                             <option value="" select>ไม่มียาเเพ้</option>
                             <?php

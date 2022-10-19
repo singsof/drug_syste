@@ -116,27 +116,27 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label class="control-label">ชื่อยา</label>
-                        <input type="text" class="form-control" placeholder="ชื่อยา" name="name_drug">
+                        <input type="text" class="form-control" placeholder="ชื่อยา" name="name_drug" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">ขนาดยา</label>
-                        <input type="text" class="form-control" placeholder="ขนาดยา" name="size_drug">
+                        <input type="text" class="form-control" placeholder="ขนาดยา" name="size_drug" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">คุณสมบัติ</label>
-                        <input type="text" class="form-control" placeholder="คุณสมบัติ" name="prope_durg">
+                        <input type="text" class="form-control" placeholder="คุณสมบัติ" name="prope_durg" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">ราคา</label>
-                        <input type="number" class="form-control" min="0" placeholder="ราคา" name="price_drug">
+                        <input type="number" class="form-control" min="0" placeholder="ราคา" name="price_drug" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">คงเหลือ</label>
-                        <input type="number" class="form-control" min="0" placeholder="คงเหลือ" name="stock">
+                        <input type="number" class="form-control" min="0" placeholder="คงเหลือ" name="stock" required>
                     </div>
                     <div class="form-group">
                         <label class="control-label">วันหมดอายุ</label>
-                        <input type="date" class="form-control" placeholder="วันหมดอายุ" name="expi_date_durg">
+                        <input type="date" class="form-control" placeholder="วันหมดอายุ" name="expi_date_durg" required>
                     </div>
                 </div>
                 <div class="modal-footer">
