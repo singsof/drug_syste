@@ -59,16 +59,6 @@ CREATE TABLE `detail_history` (
 -- Dumping data for table `detail_history`
 --
 
-INSERT INTO `detail_history` (`id_detail_his`, `id_drug`, `item`, `id_oh`) VALUES
-(1, 1, '12', 1),
-(2, 1, '3', 5),
-(3, 2, '1', 5),
-(4, 2, '1', 6),
-(5, 1, '1', 6),
-(6, 3, '4', 7),
-(7, 1, '1', 7),
-(8, 2, '1', 7);
-
 -- --------------------------------------------------------
 
 --
@@ -84,14 +74,6 @@ CREATE TABLE `drug_allergy` (
 --
 -- Dumping data for table `drug_allergy`
 --
-
-INSERT INTO `drug_allergy` (`id_allgy`, `id_drug`, `id_mem`) VALUES
-(1, 2, 2),
-(2, 1, 2),
-(3, 1, 3),
-(7, 1, 5),
-(8, 2, 5),
-(9, 3, 5);
 
 -- --------------------------------------------------------
 
@@ -134,13 +116,6 @@ CREATE TABLE `member` (
 --
 -- Dumping data for table `member`
 --
-
-INSERT INTO `member` (`id_mem`, `name_mem`) VALUES
-(1, 'ไม่ระบุตัวตน'),
-(2, 'เบน'),
-(3, 'ริส'),
-(5, 'สิน');
-
 -- --------------------------------------------------------
 
 --
@@ -159,14 +134,6 @@ CREATE TABLE `order_history` (
 -- Dumping data for table `order_history`
 --
 
-INSERT INTO `order_history` (`id_oh`, `dateTime_oh`, `id_pma`, `id_mem`, `sum_pi`) VALUES
-(1, '2022-02-25 09:55:11', 1, 1, '500'),
-(3, '2022-02-25 10:05:01', 1, 1, '40'),
-(4, '2022-02-25 10:08:33', 1, 1, '40'),
-(5, '2022-02-25 10:14:04', 1, 1, '40'),
-(6, '2022-02-25 16:15:24', 1, 1, '22'),
-(7, '2022-02-25 18:56:09', 1, 1, '222');
-
 -- --------------------------------------------------------
 
 --
@@ -184,11 +151,6 @@ CREATE TABLE `pharmacist` (
 --
 -- Dumping data for table `pharmacist`
 --
-
-INSERT INTO `pharmacist` (`id_pma`, `username_pma`, `password_pma`, `name_pma`, `status`) VALUES
-(1, 'user', 'user', 'user', 'pharmacist'),
-(6, 'sdf', 'user', 'sdf', 'pharmacist');
-
 --
 -- Indexes for dumped tables
 --
@@ -255,37 +217,37 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `detail_history`
 --
 ALTER TABLE `detail_history`
-  MODIFY `id_detail_his` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_detail_his` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `drug_allergy`
 --
 ALTER TABLE `drug_allergy`
-  MODIFY `id_allgy` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ไอดีการแพ้ยา', AUTO_INCREMENT=10;
+  MODIFY `id_allgy` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ไอดีการแพ้ยา', AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `drug_information`
 --
 ALTER TABLE `drug_information`
-  MODIFY `id_drug` int(5) NOT NULL AUTO_INCREMENT COMMENT 'ไอดียา', AUTO_INCREMENT=6;
+  MODIFY `id_drug` int(5) NOT NULL AUTO_INCREMENT COMMENT 'ไอดียา', AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `member`
 --
 ALTER TABLE `member`
-  MODIFY `id_mem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_mem` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `order_history`
 --
 ALTER TABLE `order_history`
-  MODIFY `id_oh` int(5) NOT NULL AUTO_INCREMENT COMMENT 'รหัสไอดีประวัติ', AUTO_INCREMENT=8;
+  MODIFY `id_oh` int(5) NOT NULL AUTO_INCREMENT COMMENT 'รหัสไอดีประวัติ', AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `pharmacist`
 --
 ALTER TABLE `pharmacist`
-  MODIFY `id_pma` int(5) NOT NULL AUTO_INCREMENT COMMENT 'รหัสไอดีเภสัชกร', AUTO_INCREMENT=7;
+  MODIFY `id_pma` int(5) NOT NULL AUTO_INCREMENT COMMENT 'รหัสไอดีเภสัชกร', AUTO_INCREMENT=1;
 
 --
 -- Constraints for dumped tables
