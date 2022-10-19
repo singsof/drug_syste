@@ -46,12 +46,12 @@
                                 </td>
                                 <td class="text-center">
                                     <?php
-                                    if ($row_mem['id_mem'] != 1) :
+                                    // if ($row_mem['id_mem'] != 1) :
                                     ?>
                                         <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edit_mem_<?php echo $row_mem['id_mem'] ?>">Edit</button>
                                         <button type=" button" onclick="delete_mem(<?php echo $row_mem['id_mem'] ?>)" class="btn btn-danger btn-sm">Delete</button>
                                     <?php
-                                    endif;
+                                    // endif;
                                     ?>
                                 </td>
                             </tr>
